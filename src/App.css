@@ -1,38 +1,90 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+:root {
+  --primary-white: #fff;
+  --primary-orange: #f9ab00;
+  --primary-black: rgba(255,255,255,0);
+}
+
+body{
+  font-family: "Roboto Condesed" sans-serif;
+
+}
+/*---------------  Menu Links  ------------------------*/
+nav a.nav-link {
+  font-weight: 500;
+  letter-spacing: spacing 0.038rem;
+  cursor: pointer;
+}
+
+nav ul li{
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  color: var(--primary-white) !important;
+  border-top: 0.1875rem solid  var(--primary-black);
+}
+
+.navbar > a{
+  color: var(--primary-white) !important;
+}
+
+/* .navbar-nav > li > a:active {
+  border-top: 0.1875rem solid  var(--primary-orange);
+} */
+
+.navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid  var(--primary-orange);
+}
+
+
+/*********************** Header **********************************************/
+.header-wrapper{
+  position: relative;
+  background: url("./image/AmitMaurya.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+
+/*********************** Typed **********************************************/
+.AmitsIntroTyped{
+  font-size: 2rem;
+  color: var(--primary-white);
+  align-content: center;
+}
+
+ .main-info{ 
+  float: right;
+  align-self: right;
+  width: 65vw;
+  display: flex;
+  flex-direction: column;
+  justify-self: right;
+  align-items:right;
+  text-align: center;
+  text-align: right;
+  font-size: small;
+} 
+
+.btn{
+  margin: 10px;
+}
+
+.TechStack{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.TechStack > h1{
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media only screen and (max-width: 888px) {
+  .AmitsIntroTyped{
+    font-size: 1.8rem;
+    color: var(--primary-white);
+    align-content: center;
   }
 }
